@@ -14,6 +14,8 @@ import { TasksService } from './tasks.service';
 import { StarComponent } from './star/star.component';
 import { TitelizeComponent } from './titelize/titelize.component';
 import { TitelizePipe } from './titelize.pipe';
+import { TeachersComponent } from './teachers/teachers.component';
+import { TeachersService } from './services/teachers/teachers.service';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { TitelizePipe } from './titelize.pipe';
     TasksComponent,
     StarComponent,
     TitelizeComponent,
-    TitelizePipe
+    TitelizePipe,
+    TeachersComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { TitelizePipe } from './titelize.pipe';
   ],
   providers: [
     AuthorsService,
-    TasksService
+    TasksService,
+    TeachersService
   ],
   bootstrap: [AppComponent]
 })
