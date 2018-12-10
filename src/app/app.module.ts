@@ -10,10 +10,10 @@ import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors.component';
 import { AuthorsService } from './authors.service';
 import { TasksComponent } from './tasks/tasks.component';
-import { TasksService } from './tasks.service';
+import { TasksService } from './services/tasks/tasks.service';
 import { StarComponent } from './star/star.component';
 import { TitelizeComponent } from './titelize/titelize.component';
-import { TitelizePipe } from './titelize.pipe';
+import { TitelizePipe } from './pipes/titelize/titelize.pipe';
 import { TeachersComponent } from './teachers/teachers.component';
 import { TeachersService } from './services/teachers/teachers.service';
 

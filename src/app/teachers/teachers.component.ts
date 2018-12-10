@@ -8,8 +8,14 @@ import { TeachersService } from '../services/teachers/teachers.service';
 })
 export class TeachersComponent {
   private teachers: any;
+  public email = 'something@some.com';
+
   constructor(teachersService: TeachersService) {
     this.teachers = teachersService.getTeachers();
+  }
+
+  onKeyUp() {
+    console.log(this.email);
   }
 
 }
